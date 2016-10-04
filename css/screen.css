@@ -10,24 +10,25 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 html{
-	font-size: 1.125em; /* 18px */ /*possibly change to 16 */
-	line-height: 1.222em; /* 22px = 1 gridline 120% */
-	padding: 1.222em 0.92em; /* 4:3 ratio @ 22px */ /*bullet points were added when i put padding */
+	font-size: 1.0em; /* 16px */ /*possibly change to 16 */
+	line-height: 1.2em; /* 19.2px = 1 gridline 120% */
+	padding: 1.2em 0.90em; /* 4:3 ratio @ 22px */ /*bullet points were added when i put padding */
 }
 
 h1{
-	font-size: 2.353em; /* 42.347px @ 18px */
-	line-height: 1.20em; ; /* 50.815 = 1 gridline 120% */
+	font-size: 2.647em; /* 42.347px @ 16px */
+	line-height: 2.647em; ; /* 50.815 = 1 gridline 100% */ /*i dont like this */
 }
 
 h2 {
-	font-size: 1.333em; /* 24px @ 18px */ 
-	line-height: 1.2em; /* 28.8px = 1 gridline 120% */
+	font-size: 1.50em; /* 24px @ 18px */ 
+	line-height: 1.8em; /* 28.8px = 1 gridline 120% */
 	text-decoration: underline;
 }
 
 ul {
 	 padding-bottom: 0.611em; /* 11px = half gridline*/
+	 padding-top: 0.611em; /* 11px = half gridline*/ /* probably indent rather than padding */
 }
 
 li {
