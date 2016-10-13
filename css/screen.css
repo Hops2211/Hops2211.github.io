@@ -10,36 +10,54 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 html{
-	font-size: 1.0em; /* 16px */ /*possibly change to 16 */
-	line-height: 1.2em; /* 19.2px = 1 gridline 120% */
-	padding: 1.2em 0.90em; /* 4:3 ratio @ 22px */ /*bullet points were added when i put padding */
-}
+	font-size: 1.125em; /* 18px */ /* still don't like this size */
+	line-height: 1.222em; /* 22px = 1 gridline 120% */
+	padding: 1.222em 0.917em; /* 4:3 ratio @ 22px */ /*bullet points were added when i put padding */
+  background-color: #000;
+  color: #efff00ff
+  }
 
 h1{
-	font-size: 2.647em; /* 42.347px @ 16px */
-	line-height: 2.647em; ; /* 50.815 = 1 gridline 100% */ /*i dont like this */
+	font-size: 2.353em; /* 42.347px @ 18px */
+	line-height: 1.20em; ; /* 50.816 = 1 gridline 120% */ /*i dont like this */
 }
 
 h2 {
-	font-size: 1.50em; /* 24px @ 18px */ 
-	line-height: 1.8em; /* 28.8px = 1 gridline 120% */
-	text-decoration: underline;
+	font-size: 1.50em; /* 23.94px @ 18px */ 
+	line-height: 1.21em; /* 29 = 1 gridline 120% */
+  text-decoration: underline;
+  padding-bottom: 0.611em; 
 }
 
+p {
+  padding-bottom: 1.222em;
+  padding-top: 0.306em;;
+}
 ul {
-	 padding-bottom: 0.611em; /* 11px = half gridline*/
-	 padding-top: 0.611em; /* 11px = half gridline*/ /* probably indent rather than padding */
+  padding-bottom: 0.611em; /* 11px = half gridline*/
+/*	padding-top: 0.611em; /* 11px = half gridline*/ /* probably indent rather than padding */
 }
 
 li {
   padding-bottom: 0.306em; /* 5.5px = 1/4 gridline */
 }
 
-/* li:last-child {
-  padding-bottom: 0; */
+/*
+ section li:first-child { /* wants whole job underlined but its in 3 different list tags */
+/*  text-decoration: underline;
+}
+*/
+
+section li li {
+  padding-left: 2.751em; /* double the main padding 1.834em triple 2.751em*/
+  list-style-type: disc;
+}
+
+
 
 /* ===== LAYOUT STYLES ===== */
 
 /* ===== MODULAR STYLES ===== */
+
 
 /* ===== STATE STYLES ===== */
