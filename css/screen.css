@@ -6,27 +6,27 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-/* scale set at 1.33 */
+/* using a minor third scale */
 
 /* ===== BASE STYLES ===== */
 html{
-	font-size: 1.125em; /* 18px */ /* still don't like this size */
-	line-height: 1.222em; /* 22px = 1 gridline 120% */
-	padding: 1.222em 0.917em; /* 4:3 ratio @ 22px */ /*bullet points were added when i put padding */
+	font-size: 1.0625em; /* 17px */ 
+	line-height: 1.235em; /* 21px = 1 gridline 120% */
+	padding: 1.235em 0.75em; /* 4:3 ratio @ 21px */ /*bullet points were added when i put padding */
   background-color: #000;
   color: #efff00ff
   }
 
 h1{
-	font-size: 2.353em; /* 42.347px @ 18px */
-	line-height: 1.20em; ; /* 50.816 = 1 gridline 120% */ /*i dont like this */
+	font-size: 2.074em; /* 35.251px @ 17px */
+	line-height: 1.20em; /* 42.301 = 1 gridline 120% */ /*i dont like this */
 }
 
 h2 {
-	font-size: 1.50em; /* 23.94px @ 18px */ 
-	line-height: 1.21em; /* 29 = 1 gridline 120% */
+	font-size: 1.44em; /* 24.48px @ 17px */ 
+	line-height: 1.20em; /* 29.376px = 1 gridline 120% */
   text-decoration: underline;
-  padding-bottom: 0.611em; 
+  padding-bottom: 0.618em; /* 10.5px = half gridline*/
 }
 
 p {
@@ -34,12 +34,11 @@ p {
   padding-top: 0.306em;;
 }
 ul {
-  padding-bottom: 0.611em; /* 11px = half gridline*/
-/*	padding-top: 0.611em; /* 11px = half gridline*/ /* probably indent rather than padding */
+  padding-bottom: 0.618em; /* 10.5px = half gridline*/
 }
 
 li {
-  padding-bottom: 0.306em; /* 5.5px = 1/4 gridline */
+  padding-bottom: 0.309em; /* 5.25px = 1/4 gridline */
 }
 
 /*
@@ -49,15 +48,45 @@ li {
 */
 
 section li li {
-  padding-left: 2.751em; /* double the main padding 1.834em triple 2.751em*/
+  padding-left: 2.25em; /* double the main padding 1.834em triple 2.751em*/
   list-style-type: disc;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
 
 
 /* ===== LAYOUT STYLES ===== */
+
+#navigation{
+  position: absolute; 
+  top:0;
+}
+
+.navigation li,
+.navigation li:last-child{
+  display: inline-block;
+}
+.navigation li a {
+  display: block;
+}
 
 /* ===== MODULAR STYLES ===== */
 
 
 /* ===== STATE STYLES ===== */
+
+/* 514 @ 16px/em */ /*weird calculation error*/
+@media screen and (min-width: 29.41em) {
+  h1{
+    font-size:2.986em; /*50.762px @ 17 px*/
+    line-height: 1.20em; /* 1 gridline = 120% */
+  }
+  
+  h2{
+    font-size:1.728em; /* 29.376px @ 17px */
+    line-height:1.20em; /* 35.2512px i gridline 120% */
+  }
+}
