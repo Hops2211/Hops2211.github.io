@@ -124,24 +124,23 @@ nav a: hover{
   
   #basketball-team {
     float: left;
-    width: 50%;
+    width: 50%; /* 370px /740px  2 columns plus two gutter and a margin*/ 
   }
   
   #color-run {
     width: 48%;
-    margin-left: 52%
+    margin-left: 52% /* 391px/ 740px that's plus a gutter */
   }
   
   .video {
     float: left;
     width: 50%;
-    position: absolute;
   }
   
   #basketball-team-hs {
-    padding-top: 1.20em;
+    padding-top: 1.20em; /* to align it with the next photo, the previos caption is longer */
     width: 48%;
-    margin-left: 52%
+    margin-left: 52%;
   }
   
   #food-pantry {
@@ -151,7 +150,7 @@ nav a: hover{
   
   #safety-town {
     width: 48%;
-    margin-left: 52%
+    margin-left: 52%;
   }
   
   #footer {
