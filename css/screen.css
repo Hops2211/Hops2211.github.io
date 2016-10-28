@@ -116,7 +116,60 @@ nav a: hover{
   .navigation li:last-child{
   text-align: center;
   }
+  
 }
 
-/* 775 @ 16px/em */ /*weird calculation error*/
-@media screen and (min-width: 48.4375 em)
+/* 761 @ 16px/em */
+@media screen and (min-width: 47.5625em){
+  
+  #basketball-team {
+    float: left;
+    width: 50%;
+  }
+  
+  #color-run {
+    width: 48%;
+    margin-left: 52%
+  }
+  
+  .video {
+    float: left;
+    width: 50%;
+    position: absolute;
+  }
+  
+  #basketball-team-hs {
+    padding-top: 1.20em;
+    width: 48%;
+    margin-left: 52%
+  }
+  
+  #food-pantry {
+    float: left;
+    width: 50%;
+  }
+  
+  #safety-town {
+    width: 48%;
+    margin-left: 52%
+  }
+  
+  #footer {
+    clear:both;
+  }
+  
+}
+
+/* 775 @ 16px/em */ 
+@media screen and (min-width: 48.4375em){
+  
+  .basketball-team {
+    float: left;
+    width: 50%;
+  }
+  
+  .color-run {
+    width: 50%;
+    margin-left: 52%
+  }
+}
