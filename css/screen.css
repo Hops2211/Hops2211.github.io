@@ -162,14 +162,4 @@ nav a: hover{
 
 /* 775 @ 16px/em */ 
 @media screen and (min-width: 48.4375em){
-  
-  .basketball-team {
-    float: left;
-    width: 50%;
-  }
-  
-  .color-run {
-    width: 50%;
-    margin-left: 52%
-  }
-}
+
