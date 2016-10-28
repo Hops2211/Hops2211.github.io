@@ -14,7 +14,8 @@ html{
 	line-height: 1.235em; /* 21px = 1 gridline 120% */
 	padding: 1.235em 0.75em; /* 4:3 ratio @ 21px */ /*bullet points were added when i put padding */
   background-color: #000;
-  color: #efff00ff
+  color: #efff00ff;
+  font-family: arial;
   }
 
 h1{
@@ -52,25 +53,44 @@ section li li {
   list-style-type: disc;
 }
 
-img {
+img,
+video{
   display: block;
   max-width: 100%;
+}
+
+nav a: hover{
+  text-decoration: underline;
 }
 
 
 /* ===== LAYOUT STYLES ===== */
 
 #navigation{
-  position: absolute; 
+  position: static; 
   top:0;
-}
+} 
 
 .navigation li,
 .navigation li:last-child{
   display: inline-block;
+  padding: 0;
+  width: 100%;
+  border-bottom: 0.02em solid #0000;
+}
+
+.navigation {
+  line-height:0.2em;;
+  padding: 0;
 }
 .navigation li a {
   display: block;
+  background-color: #2700EF;
+  color: #efff00ff;
+  padding: 1.20em;
+  text-decoration: none;
+  padding-bottom: 1.20em;
+  padding: 1.29em;
 }
 
 /* ===== MODULAR STYLES ===== */
@@ -78,15 +98,25 @@ img {
 
 /* ===== STATE STYLES ===== */
 
-/* 514 @ 16px/em */ /*weird calculation error*/
-@media screen and (min-width: 29.41em) {
+/* 500 @ 16px/em */ /*weird calculation error*/
+@media screen and (min-width: 31.25em) {
   h1{
     font-size:2.986em; /*50.762px @ 17 px*/
     line-height: 1.20em; /* 1 gridline = 120% */
+    text-align: center;
   }
   
   h2{
     font-size:1.728em; /* 29.376px @ 17px */
     line-height:1.20em; /* 35.2512px i gridline 120% */
+    text-align: center;
+  }
+  
+  .navigation li,
+  .navigation li:last-child{
+  text-align: center;
   }
 }
+
+/* 775 @ 16px/em */ /*weird calculation error*/
+@media screen and (min-width: 48.4375 em)
