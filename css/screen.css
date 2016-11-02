@@ -135,6 +135,8 @@ nav a: hover{
   .video {
     float: left;
     width: 50%;
+    top: 0;
+    
   }
   
   #basketball-team-hs {
