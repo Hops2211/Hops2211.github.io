@@ -53,6 +53,10 @@ section li li {
   list-style-type: disc;
 }
 
+.volunteering li {
+  list-style-type: disc;
+}
+
 img,
 video{
   display: block;
@@ -119,10 +123,25 @@ nav a: hover{
   
 }
 
+/* 685 @ 16px/em */ /* 2 column grid 21|339|21|283|21 */
+@media screen and (min-width: 42.8125em){
+  
+  #basketball-team, 
+  #color-run,
+  #food-pantry,
+  #safety-town,
+  #basketball-team-hs,
+  .video{
+    margin-left: 14.80%; /* mid grid 40.1875, 1/8 mid grid + padding 6.336em/42.8125 */
+    width: 70.40%; /* 6/8 of mid grid 40.1875 x 0.75 = 30.1406em/42.8125 */ 
+  }
+}
 /* 761 @ 16px/em */
 @media screen and (min-width: 47.5625em){
   
-  #basketball-team {
+  #basketball-team,
+  #food-pantry{
+    margin-left: 0%;
     float: left;
     width: 50%; /* 370px /740px  2 columns plus two gutter and a margin*/ 
   }
@@ -133,21 +152,16 @@ nav a: hover{
   }
   
   .video {
+    margin-left: 0%;
     float: left;
     width: 50%;
-    top: 0;
     
   }
   
   #basketball-team-hs {
-    padding-top: 1.20em; /* to align it with the next photo, the previos caption is longer */
+    padding-top: 1.20em; /* to align it with the next photo, the previous caption is longer */
     width: 48%;
     margin-left: 52%;
-  }
-  
-  #food-pantry {
-    float: left;
-    width: 50%;
   }
   
   #safety-town {
