@@ -14,8 +14,8 @@ html{
 	line-height: 1.235em; /* 21px = 1 gridline 120% */
 	padding: 1.235em 0.75em; /* 4:3 ratio @ 21px */ /*bullet points were added when i put padding */
   background-color: #000;
-  color: #efff00ff;
-  font-family: arial;
+  color: #F7FB17;
+  font-family: arial, helvetica, sans-serif;
   }
 
 h1{
@@ -26,7 +26,6 @@ h1{
 h2 {
 	font-size: 1.44em; /* 24.48px @ 17px */ 
 	line-height: 1.20em; /* 29.376px = 1 gridline 120% */
-  text-decoration: underline;
   padding-bottom: 0.618em; /* 10.5px = half gridline*/
 }
 
@@ -63,10 +62,6 @@ video{
   max-width: 100%;
 }
 
-nav a: hover{
-  text-decoration: underline;
-}
-
 
 /* ===== LAYOUT STYLES ===== */
 
@@ -80,7 +75,7 @@ nav a: hover{
   display: inline-block;
   padding: 0;
   width: 100%;
-  border-bottom: 0.02em solid #0000;
+  border-bottom: 0.02em solid #000;
 }
 
 .navigation {
@@ -90,7 +85,7 @@ nav a: hover{
 .navigation li a {
   display: block;
   background-color: #2700EF;
-  color: #efff00ff;
+  color: #F7FB17;
   padding: 1.20em;
   text-decoration: none;
   padding-bottom: 1.20em;
@@ -107,12 +102,18 @@ nav a: hover{
   h1{
     font-size:2.986em; /*50.762px @ 17 px*/
     line-height: 1.20em; /* 1 gridline = 120% */
+  }
+  
+  #interests h1{
     text-align: center;
   }
   
   h2{
     font-size:1.728em; /* 29.376px @ 17px */
     line-height:1.20em; /* 35.2512px i gridline 120% */
+  }
+  
+  #interests h2{
     text-align: center;
   }
   
@@ -174,7 +175,3 @@ nav a: hover{
   }
   
 }
-
-/* 775 @ 16px/em */ 
-@media screen and (min-width: 48.4375em){
-
